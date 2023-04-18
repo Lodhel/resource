@@ -10,3 +10,10 @@ app.config.from_object('config.Configuration')
 db = SQLAlchemy(app)
 engine = create_engine(app.config['SQLALCHEMY_DATABASE_URI'], pool_size=20, pool_recycle=3600)
 migrate = Migrate(app, db)
+
+
+def create_app(app):
+    with app.app_context():
+        from . import views
+
+        return app
