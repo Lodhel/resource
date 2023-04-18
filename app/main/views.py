@@ -20,3 +20,27 @@ class IndexView(MethodView):
     def get(self):
         context = {}
         return render_template('index.html', **context)
+
+
+@register_url('/store', 'store')
+class IndexView(MethodView):
+
+    def get(self):
+        context = {}
+        return render_template('store.html', **context)
+
+
+@register_url('/about', 'about')
+class IndexView(MethodView):
+
+    def get(self):
+        context = {}
+        return render_template('about.html', **context)
+
+
+@register_url('/info', 'info')
+class IndexView(MethodView):
+
+    def get(self):
+        context = {}
+        return render_template('info.html', **context)

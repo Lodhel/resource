@@ -1,73 +1,42 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.html' %}
+{% block title %}PuzzleCore - Информационный портал{% endblock %}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Store - Brand</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;display=swap">
-</head>
-
-<body style="background:linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url('assets/img/bg.jpg');">
-    <h1 class="text-center text-white d-none d-lg-block site-heading"><span class="text-primary site-heading-upper mb-3"><strong>ИНФОРМАЦИОННЫЙ ПОРТАЛ</strong>&nbsp;</span><span class="site-heading-lower">puzzle core</span></h1>
-    <nav class="navbar navbar-dark navbar-expand-lg py-lg-4" id="mainNav">
-        <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="#">Brand</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarResponsive"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">о нас</a></li>
-                    <li class="nav-item"><a class="nav-link" href="products.html">новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="store.html"><strong>ПРЕДЛОЖЕНИЯ</strong><br></a></li>
-                </ul>
+{% block content %}
+<section class="page-section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="text-center cta-inner rounded">
+                    <h2 class="section-heading mb-5"><span class="section-heading-upper">Приходите к нам в офис</span><span class="section-heading-lower">Мы открыты</span></h2>
+                    <ul class="list-unstyled text-start mx-auto list-hours mb-5">
+                        <li class="d-flex list-unstyled-item list-hours-item">Понедельник<span class="ms-auto">Closed</span></li>
+                        <li class="d-flex list-unstyled-item list-hours-item">Вторник<span class="ms-auto">7:00 - 20:00</span></li>
+                        <li class="d-flex list-unstyled-item list-hours-item">Среда<span class="ms-auto"><em>7:00 - 20:00</em><br></span></li>
+                        <li class="d-flex list-unstyled-item list-hours-item">Четверг<span class="ms-auto"><em>7:00 - 20:00</em><br></span></li>
+                        <li class="d-flex list-unstyled-item list-hours-item">Пятница<span class="ms-auto"><em>7:00 - 20:00</em><br></span></li>
+                        <li class="d-flex list-unstyled-item list-hours-item">Суббота<span class="ms-auto"><em>Closed</em><br></span></li>
+                        <li class="d-flex list-unstyled-item list-hours-item">Воскресенье<span class="ms-auto"><em>Closed</em><br></span></li>
+                    </ul>
+                    <p class="address mb-5"><em><strong>адрес</strong><span><br>адрес<br></span></em></p>
+                    <p class="address mb-0"><small><em>Звоните в любое время</em></small><span><br>000-000-000<br></span></p>
+                </div>
             </div>
         </div>
-    </nav>
-    <section class="page-section cta">
-        <div class="container">
+    </div>
+</section>
+<section class="page-section about-heading">
+    <div class="container"><img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{{ url_for('static', filename='assets/img/about.jpg') }}">
+        <div class="about-heading-content">
             <div class="row">
-                <div class="col-xl-9 mx-auto">
-                    <div class="text-center cta-inner rounded">
-                        <h2 class="section-heading mb-5"><span class="section-heading-upper">Приходите к нам в офис</span><span class="section-heading-lower">Мы открыты</span></h2>
-                        <ul class="list-unstyled text-start mx-auto list-hours mb-5">
-                            <li class="d-flex list-unstyled-item list-hours-item">Понедельник<span class="ms-auto">Closed</span></li>
-                            <li class="d-flex list-unstyled-item list-hours-item">Вторник<span class="ms-auto">7:00 - 20:00</span></li>
-                            <li class="d-flex list-unstyled-item list-hours-item">Среда<span class="ms-auto"><em>7:00 - 20:00</em><br></span></li>
-                            <li class="d-flex list-unstyled-item list-hours-item">Четверг<span class="ms-auto"><em>7:00 - 20:00</em><br></span></li>
-                            <li class="d-flex list-unstyled-item list-hours-item">Пятница<span class="ms-auto"><em>7:00 - 20:00</em><br></span></li>
-                            <li class="d-flex list-unstyled-item list-hours-item">Суббота<span class="ms-auto"><em>Closed</em><br></span></li>
-                            <li class="d-flex list-unstyled-item list-hours-item">Воскресенье<span class="ms-auto"><em>Closed</em><br></span></li>
-                        </ul>
-                        <p class="address mb-5"><em><strong>адрес</strong><span><br>адрес<br></span></em></p>
-                        <p class="address mb-0"><small><em>Call Anytime</em></small><span><br>000-000-000<br></span></p>
+                <div class="col-lg-10 col-xl-9 mx-auto">
+                    <div class="bg-faded rounded p-5">
+                        <h2 class="section-heading mb-4"><span class="section-heading-upper">Puzzle core</span><span class="section-heading-lower"></span></h2>
+                        <p>Founded in 2020 by Roman T, our resource specializes in preparing rich information received from leading developers, analysts and project managers in various regions of Russia. We strive for progress.<br></p>
+                        <p class="mb-0">Основанный в 2020 году Романом Т, наш ресурс специализируется на подготовке обширной информации, полученной от ведущих разработчиков, аналитиков и менеджеров проектов в различных регионах России. Мы стремимся к прогрессу.<br></p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="page-section about-heading">
-        <div class="container"><img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/about.jpg">
-            <div class="about-heading-content">
-                <div class="row">
-                    <div class="col-lg-10 col-xl-9 mx-auto">
-                        <div class="bg-faded rounded p-5">
-                            <h2 class="section-heading mb-4"><span class="section-heading-upper">Puzzle core</span><span class="section-heading-lower"></span></h2>
-                            <p>Founded in 2020 by Roman Tatarinov, our resource specializes in preparing rich information received from leading developers, analysts and project managers in various regions of Russia. We strive for progress.<br></p>
-                            <p class="mb-0">Основанный в 2020 году Романом Татариновым, наш ресурс специализируется на подготовке обширной информации, полученной от ведущих разработчиков, аналитиков и менеджеров проектов в различных регионах России. Мы стремимся к прогрессу.<br></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="text-center footer text-faded py-5">
-        <div class="container">
-            <p class="m-0 small">©&nbsp;PuzzleCore 2020</p>
-        </div>
-    </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/current-day.js"></script>
-</body>
-
-</html>
+    </div>
+</section>
+{% endblock %}

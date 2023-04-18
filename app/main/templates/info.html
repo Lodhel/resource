@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block title %}PuzzleCore - Девиз{% endblock %}
+
+{% block content %}
+<section class="page-section">
+    <div class="container">
+        <div class="product-item">
+            <div class="d-flex product-item-title">
+                <div class="d-flex me-auto bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-0"><span class="section-heading-upper">Perfection</span><span class="section-heading-lower">совершенство</span></h2>
+                </div>
+            </div>
+            <img class="img-fluid d-flex mx-auto product-item-img mb-3 mb-lg-0 rounded" src="{{ url_for('static', filename='assets/img/products-01.jpg') }}">
+            <div class="bg-faded p-5 rounded">
+                <p class="mb-0">Мы рады удивлять своей работой, и это заметно. Каждый раз, когда вы заказываете персональный пост, мы гарантируем, что это будет незабываемый опыт. </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-section">
+    <div class="container">
+        <div class="product-item">
+            <div class="d-flex product-item-title">
+                <div class="d-flex ms-auto bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-0"><span class="section-heading-upper"><strong>progress</strong></span><span class="section-heading-lower">прогресс</span></h2>
+                </div>
+            </div>
+            <img class="img-fluid d-flex mx-auto product-item-img mb-3 mb-lg-0 rounded" src="{{ url_for('static', filename='assets/img/products-02.jpg') }}">
+            <div class="bg-faded p-5 rounded">
+                <p class="mb-0">По возможности мы развиваемся как информационный ресурс премиум-класса.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-section">
+    <div class="container">
+        <div class="product-item">
+            <div class="d-flex product-item-title">
+                <div class="d-flex mx-auto bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-0"><span class="section-heading-upper"><strong>Мировой стандарт</strong></span><span class="section-heading-lower">World standard</span></h2>
+                </div>
+            </div>
+            <img class="img-fluid d-flex mx-auto product-item-img mb-3 mb-lg-0 rounded" src="{{ url_for('static', filename='assets/img/products-03.jpg') }}">
+            <div class="bg-faded p-5 rounded">
+                <p class="mb-0">Когда вы посещаете нас, вы всегда найдете что то новое. Пожалуйста, посетите нас лично для получения более подробной информации.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
