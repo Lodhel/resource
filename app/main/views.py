@@ -1,5 +1,6 @@
 from typing import Union
 from flask.views import MethodView
+from flask import render_template
 from app.main import app
 
 
@@ -13,8 +14,9 @@ def register_url(url: str, name: str = None, methods: Union[list, tuple] = ('GET
     return wrapper
 
 
-@register_url('/', 'home_view')
-class HomeView(MethodView):
+@register_url('/', 'index_view')
+class IndexView(MethodView):
 
     def get(self):
-        return 'ok'
+        context = {}
+        return render_template('index.html', **context)
